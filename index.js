@@ -39,3 +39,18 @@ addMarks("Hello", "!", 1); // Hello!
 addMarks("Hello", "!", 3); // Hello!!!
 addMarks("How are you", "?", 1); // How are you?
 addMarks("How are you", "?", 2); // How are you??
+
+//Function const return
+const showNameWithAge = (name = "Unknown", age = 0) => {
+  const nameWithAge = `${name} is ${age} year(s) old`;
+
+  return nameWithAge; // return the value to be used later
+};
+
+const alpha = showNameWithAge("Alpha", 11);
+const betty = showNameWithAge("Betty", 42);
+const gamma = showNameWithAge("Gamma", 30);
+
+console.log(alpha);
+console.log(betty);
+console.log(gamma);
