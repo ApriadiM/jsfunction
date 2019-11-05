@@ -23,3 +23,19 @@ const checkAge = function(age) {
 checkAge(10); // You are still young
 checkAge(25); // You are old enough
 checkAge(-2); // You are not born yet
+
+//Function let for
+const addMarks = (text, mark, times) => {
+  let newText = text;
+
+  for (let i = 0; i <= times; i++) {
+    newText += mark;
+  }
+
+  console.log(newText);
+};
+
+addMarks("Hello", "!", 1); // Hello!
+addMarks("Hello", "!", 3); // Hello!!!
+addMarks("How are you", "?", 1); // How are you?
+addMarks("How are you", "?", 2); // How are you??
